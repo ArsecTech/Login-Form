@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Login-Form</string>
+    <string name="btn_text">Click</string>
+    <string name="btn_text2">nothing</string>
+    <string name="welcome_text">به برنامه Arsec خوش آمدید</string>
+</resources>

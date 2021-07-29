@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profileicon" />
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageview"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/welcome_text"
+            android:textColor="#E91E63" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome_text"
+            android:layout_marginTop="16dp"
+            android:hint="نام خود را وارد کنید"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/input_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_name"
+            android:layout_marginTop="16dp"
+            android:hint="نام خانوادگی خود را وارد کنید"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_lastname"
+            android:layout_marginTop="16dp"
+            android:hint="ایمیل خود را وارد کنید"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_email"
+            android:layout_marginTop="16dp"
+            android:hint="رمز خود را وارد کنید" />
+
+        <EditText
+            android:id="@+id/input_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_password"
+            android:layout_marginTop="16dp"
+            android:hint="شماره خود را وارد کنید"
+            android:inputType="textPersonName" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/gender_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="آقا" />
+
+
+            <RadioButton
+                android:id="@+id/gender_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="خانم" />
+
+
+        </RadioGroup>
+
+
+
+                <Button
+                    android:id="@+id/submit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gender"
+                    android:text="ثبت نام"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
